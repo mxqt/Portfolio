@@ -1,0 +1,51 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote,
+body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog,
+div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form,
+header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark,
+menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s,
+samp, section, small, span, strike, strong, sub, summary, sup, table, tbody,
+td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: #000;
+    text-decoration: none;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-weight : normal;
+    -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+        }
+
+body, html {
+  overflow-x: hidden;
+  background: #fff;
+  color: #000;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        }
+
+h1 {
+  font-size: 2.5em;
+}
+
+.title
+{
+  margin-top: 35px;
+  margin-left: 35px;
+  width: 800px;
+
+}
+.contact{
+  margin-top: 35px;
+  margin-left: 35px;
+
+}
+
+a:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+@media screen and (min-width: 0px) and (max-width: 856px) {
+
+    h1{
+      font-size: 1.3em;
+    }
+
+    .title {
+      margin-left: 35px;
+      margin-top: 35px;
+      width: 80%;
+    }
+
+    .contact{
+        margin-left: 35px;
+        margin-top: 35px;
+      }
+    }
+
+
+
+
+}
