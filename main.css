@@ -1,0 +1,75 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote,
+body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog,
+div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form,
+header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark,
+menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s,
+samp, section, small, span, strike, strong, sub, summary, sup, table, tbody,
+td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: #000;
+    text-decoration: none;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-weight : normal;
+    -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+        }
+
+@font-face {
+          font-family: "UntitledSansTest-Regular";
+          src:url("UntitledSansTest-Regular.woff") format('woff');
+        }
+
+body, html {
+  overflow-x: hidden;
+  background: #fff;
+  color: #000;
+  font-family: "UntitledSansTest-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        }
+
+h1 {
+  font-size: 2.3em;
+  letter-spacing: -1px;
+}
+
+
+h4{
+  padding-bottom: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.title
+{
+  margin-top: 35px;
+  margin-left: 35px;
+  width: 550px;
+
+}
+.contact{
+  margin-top: 35px;
+  margin-left: 35px;
+}
+
+.music{
+  margin-top: 35px;
+  margin-left: 35px;
+  width: 600px;
+}
+
+.read{
+  margin-top: 35px;
+  margin-left: 35px;
+  width: 600px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
