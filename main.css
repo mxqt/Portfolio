@@ -23,15 +23,15 @@ h1, h2, h3, h4, h5, h6 {
         }
 
 @font-face {
-          font-family: "UntitledSansTest-Regular";
-          src:url("UntitledSansTest-Regular.woff") format('woff');
+          font-family: "SangBleuSunrise-Regular-WebS";
+          src:url("SangBleuSunrise-Regular-WebS.woff") format('woff');
         }
 
 body, html {
   overflow-x: hidden;
   background: #fff;
   color: #000;
-  font-family: "UntitledSansTest-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "SangBleuSunrise-Regular-WebS", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
         }
 
 h1 {
