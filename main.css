@@ -22,54 +22,46 @@ h1, h2, h3, h4, h5, h6 {
 	  -moz-osx-font-smoothing: grayscale;
         }
 
-@font-face {
-          font-family: "SangBleuSunrise-Regular-WebS";
-          src:url("SangBleuSunrise-Regular-WebS.woff") format('woff');
-        }
-
 body, html {
   overflow-x: hidden;
   background: #fff;
   color: #000;
-  font-family: "SangBleuSunrise-Regular-WebS", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
         }
 
 h1 {
-  font-size: 2.3em;
-  letter-spacing: -1px;
-}
-
-
-h4{
-  padding-bottom: 15px;
-  margin-left: 10px;
-  margin-top: 10px;
+  font-size: 2em;
+  letter-spacing: -0.01em;
 }
 
 .title
 {
-  margin-top: 35px;
-  margin-left: 35px;
-  width: 550px;
-
+margin-left: .5vw;
+margin-top: 1vh;
+width: 50vw;
 }
 .contact{
-  margin-top: 35px;
-  margin-left: 35px;
+  margin-top: 1vh;
+  margin-left: 1vw;
 }
 
 .music{
-  margin-top: 35px;
-  margin-left: 35px;
+  margin-top: 1vh;
+  margin-left: 1vw;
   width: 600px;
 }
 
 .read{
-  margin-top: 35px;
-  margin-left: 35px;
+  margin-top: 1vh;
+  margin-left: 1vw;
   width: 600px;
 }
 
 a:hover{
   text-decoration: underline;
+}
+
+.indent{
+  padding-left: 1rem;
 }
