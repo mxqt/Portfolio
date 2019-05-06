@@ -64,8 +64,13 @@ width: 50vw;
   width: 600px;
 }
 
-a:hover{
+a{
   text-decoration: underline;
+}
+
+
+a:hover{
+  text-decoration: none;
 }
 
 .indent{
