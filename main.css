@@ -32,21 +32,43 @@ body, html {
         }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: -0.01em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: -0.01em;
   text-indent: 1rem;
+}
+
+h3{
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  padding-bottom: 1.5%;
+}
+
+::selection{
+  background-color:  #1AFF56;
+}
+
+.border{
+  padding: 1.5%;
+}
+
+.wrapper{
+  padding-top: 1%;
+  padding-left: 1.5%;
+  padding-right: 0;
+  padding-bottom: 1.5%;
+  background-color: #EAEAEA;
 }
 
 .title
 {
 margin-left: .5vw;
-margin-top: 1vh;
-width: 50vw;
+width: 40vw;
 }
 .contact{
   margin-top: 1vh;
@@ -75,4 +97,89 @@ a:hover{
 
 .indent{
   padding-left: 1rem;
+}
+
+
+.artistList-index{
+  margin-top: 5vh;
+}
+
+.artistList-item{
+  flex-basis: 100%;
+  display: block;
+}
+
+.artistList-images img {
+  width:40%;
+  padding: 0;
+  display: inline-block;
+}
+
+.artistList-images{
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+-webkit-overflow-scrolling: touch;
+margin-top: 0vh;
+margin-bottom: 5vh;
+padding: 0;
+&::-webkit-scrollbar {
+display: none;
+}
+}
+
+
+
+.artistList-item .list-item{
+  padding-top: 20px;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  padding-left: .5vw;
+  border-bottom:3px solid #1AFF56;
+}
+
+
+.artistList-item .list-item .list-info {
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  align-items: center;
+}
+
+
+.artistList-item .list-item .list-info .name {
+  flex-basis: 80%;
+}
+
+.artistList-item .list-item .list-info .author {
+  flex-basis: 20%;
+}
+
+.artistList-item .list-item .list-info .year {
+  flex-basis: 150px;
+  text-align: right;
+}
+
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #1aff56;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
 }
