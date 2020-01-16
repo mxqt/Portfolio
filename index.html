@@ -1,43 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-
+<!-- meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- title -->
-<title> Max Quinn-Tapara </title>
-
-<!-- mobile -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
-
-<!-- favicon -->
-<link rel="shortcut icon" href="favicon_1.png"/>
-
-<!-- css -->
-<link rel="stylesheet" type=text/css href="main.css"/>
-<link rel="stylesheet" type="text/css" href="media_queries.css"/>
+  <title>Ko Max</title>
+<!-- styles -->
+  <link href="styles.css" rel="stylesheet">
+<!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-<div class="title" id="title">
-<h1>Max Wiremu Quinn-Tapara<br></h1>
-<h1>
-Born in Aotearoa and of Ngāti Maniapoto descent.
-</h1>
-<h2>
-Max is studying Visual Communication at the College of Creative Arts at Massey University in Te Whanganui-a-Tara.
-</h2>
-<h2>
-He is currently an Intern Designer at <a href="https://scratchdesign.co.nz" target="_blank">Scratch</a> and is currently <a href="https://www.are.na/share/HocAwBo" target="_blank">read</a>ing White Noise by Don DeLillo.</h2><br>
-<br>
-<h1>
-Contact
-<div class="indent"> +64 22 0904590 <br>
-<a href="mailto:web@maxquinntapara.com" target="_blank">hi@maxquinntapara.com</a>
-</h1>
-</div>
+<div class="main-nav">
+        <h4>MAX QUINN-TAPARA</h4>
 </div>
 
+
+<div class="work">
+  <div id="title">
+            <h2>list-style-type</h2>
+        </div>
+<li id="#i1"><img src="img/6.1.jpg" alt="Elements of Typography"></li>
+<li id="#i4"><img src="img/5.jpg" alt="Heldane Specimen"></li>
+<li id="#i2"><img src="img/4.jpg" alt="Town Hall"></li>
+</div>
+
+
+
+<footer>
+<section class="information">
+  <div class="container">
+  <h1>Pepeha</h1>
+  Ko Pirongia Te Maunga<br>
+  Ko Waipa Te Awa<br>
+  Ko Tainui Te Waka<br>
+  Ko Ngāti Maniapoto, Ko Te Āti Awa Te Iwi<br>
+  Nō Epuni Ahau<br>
+  Ko Max Wiremu Quinn-Tapara Ingoa
+</div>
+
+
+<div class="container">
+  <h1>Graduation</h1>
+      <div id="countdown"></div>
+      College of Creative Arts, Massey University.
+      <br>
+      <br>
+  <h1>Experience</h1>
+      Scratch Design
+      <br>
+      — 1 year 6 months
+</div>
+
+<div class="container">
+<h1>Korero Mai</h1>
+            <a href="mailto:maxquinntapara@gmail.com">Email</a><br>
+            <a href="https://twitter.com/maxquinntapara">(+64) 220904590</a><br><br>
+<h1>Reading</h1>
+            <a href="https://www.are.na/share/HocAwBo">Just Kids<br>— Patti Smith</a><br>
+    </div>
+    </section>
+
+</footer>
+
+    <!-- <div class="work">
+    <div class="container">
+    <div class="row">
+    <div class="col-12">
+    <img src="img/6.jpg" alt="">
+    </div>
+    </div>
+    </div>
+        </div>
+ -->
 </body>
+<script>
+
+// Set the date we're counting down to
+var countDownDate = new Date("Oct,30, 2020 17:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+// Get todays date and time
+var now = new Date().getTime();
+
+// Find the distance between now and the count down date
+var distance = countDownDate - now;
+
+// Time calculations for days, hours, minutes and seconds
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+// Output the result in an element with id="demo"
+document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
++ minutes + "m " + seconds + "s ";
+
+// If the count down is over, write some text
+if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "NOW";
+}
+}, 1000);
+
+
+
+$.extend($.expr[':'], {
+    inView: function(el) {
+        var width = $(el).width(),
+            height = $(el).height(),
+            offset = $(el).offset(),
+
+            vp_dimensions = {
+                height: $(window).height(),
+                width: $(window).width()
+            },
+            y_offset = (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop),
+            x_offset = (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft);
+
+        return (
+        offset.top < (y_offset + vp_dimensions.height) && offset.left < (x_offset + vp_dimensions.width) && (offset.top + height) > y_offset && (offset.left + width) > x_offset);
+    }
+});
+
+
+
+// Change the titles on scroll
+$(window).scroll(function() {
+
+    $('li').each(function() {
+        var self = $(this),
+            title = self.find('img').attr('alt');
+        if (self.is(':inView')) {
+            $('#title').find('h2').text(title);
+        }
+    });
+
+}).scroll();
+
+</script>
 </html>
