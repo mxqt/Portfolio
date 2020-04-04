@@ -88,7 +88,7 @@ li{
   position: relative;
   padding-left: 2vw;
   background-color: #000;
-    -webkit-box-shadow: 0px -8px 20px 0px #000;
+-webkit-box-shadow: 0px -8px 20px 0px #000;
 -moz-box-shadow:    0px -8px 20px 0px #000;
 box-shadow:         0px -8px 20px 0px #000;
     
@@ -107,8 +107,8 @@ box-shadow:         0px -8px 20px 0px #000;
 }
 
 footer{
-position: relative;   
 background-color:#000;
+position: relative;
 z-index: 2;
 top: 2vh;
 -webkit-box-shadow: 0px -8px 20px 0px #000;
@@ -121,7 +121,7 @@ box-shadow:         0px -8px 20px 0px #000;
     display: grid;
     grid-template-columns: 25vw 25vw 25vw;
     padding-bottom: 2vh;
-    padding-top: 2vh;
+    padding-top:0vh;
     width: 28vw;
     line-height: 1.4em;
     margin-left: 2vw;
@@ -142,16 +142,20 @@ h4{
   max-width: 100vw;
   position: relative;
 }
-    
-    
+
+        
 .information{
+    margin-top:-50px;
+    padding-top: 2vh;
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: auto;
 }
     
-  .work img{
+    
+    
+.work img{
   max-width: auto;
-  padding-top: 3vh;
+  padding-top: 1vh;
 }
     
   
@@ -159,15 +163,12 @@ h4{
     height: auto;
 }
    
-    
+   
     
 .container{
     margin-bottom: 2vh;
 }
-
-h1{
-
-}
+    
 
 
 .main-nav{
