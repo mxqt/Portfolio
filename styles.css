@@ -4,8 +4,6 @@
 }
 
 
-
-
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote,
 body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog,
 div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form,
@@ -103,6 +101,10 @@ box-shadow:         0px -8px 20px 0px #000;
 }
 
 
+
+#half{
+    height: 95vh;
+}
 
 footer{
 position: relative;   
