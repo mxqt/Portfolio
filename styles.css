@@ -37,15 +37,16 @@ body, html {
         background-color: #000;
         color: #fff;
         width: 100%;
+        overflow-x: hidden;
     }
 
 h1{
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-stretch: 100%;
   font-style: normal;
   font-weight: 400;
-  padding-bottom: 1vh;
+
   opacity: .7;
 }
 
@@ -57,7 +58,7 @@ h2{
   font-weight: 400;
   text-decoration: underline .5px;
   position: fixed;
-  right: 3vw;
+  right: 1vw;
   bottom: 1vh;
 }
 
@@ -120,7 +121,7 @@ box-shadow:         0px -8px 20px 0px #000;
 
 .information {
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-columns: 50vw 30vw 30vw;
     padding-bottom: 2vh;
     padding-top:0vh;
     width: 28vw;
@@ -174,7 +175,9 @@ h4{
     
 
 
-.main-nav{
+.main-nav {
       z-index: 1;
       margin-left: 2vw;
+}
+
 }
