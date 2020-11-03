@@ -47,26 +47,20 @@ h2 {
   text-indent: 4rem;
 }
 
-.title
-{
-margin-left: .5vw;
-margin-top: 1vh;
+.title {
+padding: .5em;
 width: 500px;
 }
-.contact{
+
+.contact {
   margin-top: 1vh;
   margin-left: 1vw;
 }
 
-
-a{
+a {
   text-decoration: underline;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
-}
-
-.indent{
-  padding-left: 4rem;
 }
