@@ -9,7 +9,7 @@ td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     }
 
@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6 {
 
 body, html {
   overflow-x: hidden;
-  background: #fff;
-  color: #000;
+  background: #000;
+  color: #fff;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   z-index: 1;
@@ -33,34 +33,34 @@ body, html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;;
+  cursor: default;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
-  font-size: 1.3em;
-  letter-spacing: -0.01em;
+  font-size: 14px;
+  letter-spacing: -0.004em;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 18px;
   letter-spacing: -0.01em;
   text-indent: 4rem;
 }
 
 .title {
-padding: .5em;
+margin-top: 46%;
+margin-left: 14.6666%;
 width: 550px;
 }
 
-.contact {
-  margin-top: 1vh;
-  margin-left: 1vw;
-}
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
