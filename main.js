@@ -1,95 +1,93 @@
+$(document).ready(function(){
 
-let numBalls = 22;
-let spring = 0.05;
-let gravity = 0.02;
-let friction = -0.8;
-let balls = [];
+	var winWidth = $(window).width();
+	var winHeight = $(window).height();
+	var slide = 0;
+	var colours = ['blue', 'red', 'yellow', 'purple', 'green', 'orange'];
+	var colourIndex = 0;
+	var divider = 1/$(document).height();
 
-function setup() {
+	if(winWidth < 600){
+		var size = winHeight < winWidth ? winWidth : winHeight;
+		$('.flash').css({
+			width:size*2,
+			height:size*2,
+			marginTop:-size,
+			marginLeft:-size
+		});
+	}
 
-  createCanvas(windowWidth, windowHeight);
-  frameRate(30);
-  noFill();
+	// $(document).scroll(function(){
+	// 	scrollTop = $(document).scrollTop();
+	// 	scale = 1 - (scrollTop * divider);
+	// 	$('.flash').css({'transform':'scale(' + scale + ')'});
+	// });
+
+	$(document).mousemove(function(e){
+		$('.flash').css({
+			top:e.pageY - $(document).scrollTop(),
+			left:e.pageX
+		});
+	});
+
+	$(document).mousedown(function(e){
+		if(!$(e.target).hasClass('email')){
+			$('.flash').removeClass('blue red yellow purple green orange').addClass('flashing black');
+			$('header').hide();
+			$('.info').show();
+			slide = slide >= $('.slides li').length - 1 ? slide = 0 : slide + 1;
+			$('.slides li').eq(slide).addClass('visible');
+			e.preventDefault();
+		}
+	});
+
+	$(document).mouseup(function(e){
+		$('.slides li').removeClass('visible');
+		colourIndex = colourIndex === 5 ? colourIndex = 0 : colourIndex + 1;
+		$('.flash').addClass(colours[colourIndex]).removeClass('flashing black');
+		$('.info').hide();
+		$('header').show();
+		e.preventDefault();
+	});
+
+	document.addEventListener('touchmove', function(e){
+		$('.flash, .white').css({
+			top:e.pageY,
+			left:e.pageX
+		});
+		e.preventDefault();
+	}, false);
+
+	document.addEventListener('touchstart', function(e){
+		if(!$(e.target).hasClass('email')){
+			$('.flash, .white').css({
+				top:e.pageY,
+				left:e.pageX
+			});
+			$('.flash').removeClass('blue red yellow purple green orange').addClass('flashing black');
+			$('header').hide();
+			$('.info').show();
+			slide = slide >= $('.slides li').length - 1 ? slide = 0 : slide + 1;
+			$('.slides li').eq(slide).addClass('visible');
+			e.preventDefault();
+		}
+	}, false);
+
+	document.addEventListener('touchend', function(e){
+		if(!$(e.target).hasClass('email')){
+			$('.slides li').removeClass('visible');
+			colourIndex = colourIndex === 5 ? colourIndex = 0 : colourIndex + 1;
+			$('.flash').addClass(colours[colourIndex]).removeClass('flashing black');
+			$('.info').hide();
+			$('header').show();
+			e.preventDefault();
+		}
+	}, false);
 
 
-  for (let i = 0; i < numBalls; i++) {
-    balls[i] = new Ball(
-      random(width),
-      random(height),
-      random(30, 70),
-      i,
-      balls
-    );
-  }
-  noStroke();
-  fill(255, 255, 255);
-}
 
-function draw() {
-  background(0);
-  balls.forEach(ball => {
-    ball.collide();
-    ball.move();
-    ball.display();
-  });
-}
 
-class Ball {
-  constructor(xin, yin, din, idin, oin) {
-    this.x = xin;
-    this.y = yin;
-    this.vx = 0;
-    this.vy = 0;
-    this.diameter = din;
-    this.id = idin;
-    this.others = oin;
-  }
 
-  collide() {
-    for (let i = this.id + 1; i < numBalls; i++) {
-      // console.log(others[i]);
-      let dx = this.others[i].x - this.x;
-      let dy = this.others[i].y - this.y;
-      let distance = sqrt(dx * dx + dy * dy);
-      let minDist = this.others[i].diameter / 2 + this.diameter / 2;
-      //   console.log(distance);
-      //console.log(minDist);
-      if (distance < minDist) {
-        //console.log("2");
-        let angle = atan2(dy, dx);
-        let targetX = this.x + cos(angle) * minDist;
-        let targetY = this.y + sin(angle) * minDist;
-        let ax = (targetX - this.others[i].x) * spring;
-        let ay = (targetY - this.others[i].y) * spring;
-        this.vx -= ax;
-        this.vy -= ay;
-        this.others[i].vx += ax;
-        this.others[i].vy += ay;
-      }
-    }
-  }
 
-  move() {
-    this.vy += gravity;
-    this.x += this.vx;
-    this.y += this.vy;
-    if (this.x + this.diameter / 2 > width) {
-      this.x = width - this.diameter / 2;
-      this.vx *= friction;
-    } else if (this.x - this.diameter / 2 < 0) {
-      this.x = this.diameter / 2;
-      this.vx *= friction;
-    }
-    if (this.y + this.diameter / 2 > height) {
-      this.y = height - this.diameter / 2;
-      this.vy *= friction;
-    } else if (this.y - this.diameter / 2 < 0) {
-      this.y = this.diameter / 2;
-      this.vy *= friction;
-    }
-  }
 
-  display() {
-    ellipse(this.x, this.y, this.diameter, this.diameter);
-  }
-}
+});
