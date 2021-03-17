@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Droulers";
+  src: url("fonts/Droulers-Regular.woff") format("woff"),
+       url("fonts/Droulers-Regular.woff2") format("woff2"),
+       url("fonts/Droulers-Regular.ttf") format("ttf");
+
+}
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote,
 body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog,
 div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form,
@@ -26,7 +34,7 @@ body, html {
   overflow-x: hidden;
   background: #000;
   color: #fff;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Droulers";
   font-weight: 400;
   z-index: 1;
   -webkit-user-select: none;
@@ -41,15 +49,18 @@ body, html {
 }
 
 h1 {
-  font-size: .8em;
-  letter-spacing: -0.004em;
-  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  text-indent: 100px;
 }
 
 .title {
 z-index: 10000;
-margin-top: 46%;
-margin-left: 14.6666%;
+width: 60%;
+padding: 20px;
+transition: opacity 10s linear;
+animation-name: title;
+animation-duration: 4s;
 }
 
 
@@ -59,4 +70,17 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@keyframes title {
+  0%   {opacity:0;}
+  100% {opacity:1;}
+}
+
+@media only screen and (max-width: 768px) {
+
+.title {
+width: 90%;
+}
+
 }
