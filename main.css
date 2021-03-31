@@ -92,6 +92,7 @@ h2 {
   display: inline-grid;
   grid-template-columns: repeat(3, auto);
   text-align: center;
+  padding-bottom: 100px;
 
 }
 
