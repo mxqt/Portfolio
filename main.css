@@ -151,12 +151,14 @@ h2 {
   }
   
 
-.h1 {
-    font-size: 12px;
+h1{
+    font-size: 18px;
+    line-height: 19px;
 }
 
-.h2{
-  font-size: 12px;
+h2{
+  font-size: 16px;
+  line-height: normal;
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5 {
