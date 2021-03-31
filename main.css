@@ -71,14 +71,14 @@ img {
 
 
 h1 {
-  font-size: 1.5em;
-  line-height: 1.4em;
+  font-size: 25px;
+  line-height: 28px;
   padding-bottom: 20px;
 }
 
 h2 {
   font-family: monospace;
-  font-size: 1.3em;
+  font-size: 18px;
   padding-bottom: 20px;
   text-indent: 45px;
 }
@@ -147,12 +147,17 @@ h2 {
 
 @media only screen and (max-width: 768px) {
 
-.header{
-    position: relative;
-}
+  .container{
+    padding: 10px;
+  }
+  
 
 .h1 {
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.h2{
+  font-size: 12px;
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5 {
