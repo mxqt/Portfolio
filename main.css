@@ -90,8 +90,7 @@ h2 {
 .footer{
   width: 100%;
   display: inline-grid;
-  grid-template-columns: auto auto auto;
-
+  grid-template-columns: repeat(3, auto);
   text-align: center;
 
 }
@@ -163,6 +162,10 @@ h2 {
 .col-1, .col-2, .col-3, .col-4, .col-5 {
     width: 100%;
     margin-left: 0;
+}
+
+.footer{
+  grid-template-columns: 100%;
 }
 
 }
