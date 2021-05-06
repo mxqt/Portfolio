@@ -71,15 +71,15 @@ img {
 
 
 h1 {
-  font-size: 25px;
-  line-height: 28px;
-  padding-bottom: 20px;
+  font-size: 1.25em;
+  line-height: 1.15em;
+  padding-bottom: 10px;
   font-weight: bold;
 }
 
 h3 {
-  font-size: 25px;
-  line-height: 28px;
+  font-size: 1.25em;
+  line-height: 1.15em;
   padding-bottom: 20px;
   font-weight: bold;
 }
