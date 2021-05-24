@@ -101,16 +101,14 @@ h2 {
 }
 
 .footer{
-  width: 100%;
+  width: 100vw;
   height: 90vh;
   display: inline-grid;
-  grid-template-columns: repeat(3, 33.33%);
+  grid-template-columns: repeat(3, 33.3%);
   padding-top: 25px;
   padding-left: 25px;
-
-  column-gap: 250px;
+  column-gap: 12vw;
   background-color: yellow;
-
 }
 
 .header {
@@ -184,7 +182,7 @@ h1{
 }
 
 h2{
-  font-size: 16px;
+  font-size: .85em;
   line-height: normal;
 }
 
@@ -194,7 +192,9 @@ h2{
 }
 
 .footer{
-  grid-template-columns: 93%;
+  grid-template-columns: 90%;
+  height: 98vh;
+  padding-left: 10px;
 }
 
 }
