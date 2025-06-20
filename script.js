@@ -12,20 +12,20 @@ const images = [
     { id: 10, src: "images/rangatira2.jpeg", alt: "Rangatira 2", placement: "right", size: "large", caption: "Extended Whānau – Rangatira Zine, 2023", type: "image" },
     { id: 11, src: "images/rangatira3.jpeg", alt: "Rangatira 3", placement: "left", size: "large", caption: "Extended Whānau – Rangatira Zine, 2023", type: "image" },
     { id: 12, src: "images/rangatira4.jpeg", alt: "Rangatira 4", placement: "center", size: "large", caption: "Extended Whānau – Rangatira Zine, 2023", type: "image" },
-    { id: 13, src: "images/tehau1.jpg", alt: "Tehau 1", placement: "center", size: "large", caption: "Tehau Series, 2024, Photo: Rachel Green", type: "image" },
-    { id: 14, src: "images/tehau2.jpg", alt: "Tehau 2", placement: "fullscreen", size: "fullscreen-landscape", caption: "Cultural Expression, 2023, Photo: Tom Anderson", type: "image" },
-    { id: 15, src: "images/tematahi.jpg", alt: "Tematahi", placement: "fullscreen", size: "fullscreen-landscape", caption: "Tematahi Portrait, 2024, Photo: Kate Miller", type: "image" },
-    { id: 16, src: "images/tepuna1.jpeg", alt: "Tepuna 1", placement: "fullscreen", size: "fullscreen-landscape", caption: "Tepuna Stories, 2023, Photo: Ben Clark", type: "image" },
-    { id: 17, src: "images/tepuna2.jpeg", alt: "Tepuna 2", placement: "fullscreen", size: "fullscreen-landscape", caption: "Ancestral Connections, 2024, Photo: Sophie Turner", type: "image" },
+    { id: 13, src: "images/tehau1.jpg", alt: "Tehau 1", placement: "center", size: "large", caption: "Extended Whānau - Te Hau Whakatonu, 2024", type: "image" },
+    { id: 14, src: "images/tehau2.jpg", alt: "Tehau 2", placement: "fullscreen", size: "fullscreen-landscape", caption: "Extended Whānau - Te Hau Whakatonu, 2024", type: "image" },
+    { id: 15, src: "images/tematahi.jpg", alt: "Tematahi", placement: "fullscreen", size: "fullscreen-landscape", caption: "Extended Whānau - Te Tōangaroa, 2024. Photo: Luke Foley-Martin, type: "image" },
+    { id: 16, src: "images/tepuna1.jpeg", alt: "Tepuna 1", placement: "fullscreen", size: "fullscreen-landscape", caption: "Extended Whānau - Te Puna, Tātaki, 2024.", type: "image" },
+    { id: 17, src: "images/tepuna2.jpeg", alt: "Tepuna 2", placement: "fullscreen", size: "fullscreen-landscape", caption: "Extended Whānau - Te Puna, Tātaki", type: "image" },
     { id: 18, src: "images/wahine1.jpeg", alt: "Wahine 1", placement: "fullscreen", size: "fullscreen-landscape", caption: "Wahine Toa, 2023, Photo: Jeremy Hooper", type: "image" },
     { id: 19, src: "images/wahine2.jpeg", alt: "Wahine 2", placement: "right", size: "fullscreen", caption: "Wahine Toa, 2023, Photo: Jeremy Hooper", type: "image" },
     { id: 20, src: "images/whetu1.jpg", alt: "Whetu 1", placement: "fullscreen-landscape", size: "fullscreen-landscape", caption: "Extended Whānau – Whetūrangitia, 2022. Photo: Toaki Okano", type: "image" },
-    { id: 21, src: "images/whetu2.jpg", alt: "Whetu 2", placement: "left", size: "large", caption: "Extended Whānau – Whetūrangitia, 2022. Photo: Toaki Okano", type: "image" },
+    { id: 21, src: "images/whetu2.jpg", alt: "Whetu 2", placement: "left", size: "large", caption: "Extended Whānau – Whetūrangitia, 2022", type: "image" },
     { id: 22, src: "images/whetu3.jpg", alt: "Whetu 3", placement: "right", size: "large", caption: "Extended Whānau – Whetūrangitia, 2022. Photo: Toaki Okano", type: "image" },
     { id: 23, src: "images/whetu4.jpg", alt: "Whetu 4", placement: "fullscreen-landscape", size: "fullscreen-landscape", caption: "Extended Whānau – Whetūrangitia, 2022. Photo: Toaki Okano", type: "image" },
     { id: 24, src: "images/tepatu1.png", alt: "Tepatu 1", placement: "center", size: "large", caption: "Haumi – Te Pā Tū, 2022", type: "image" },
     { id: 25, src: "images/tepatu2.png", alt: "Tepatu 2", placement: "fullscreen-landscape", size: "fullscreen-landscape", caption: "Haumi – Te Pā Tū, 2022. Photo: Damien Nikora", type: "image" },
-    { id: 26, src: "images/tepatu5.png", alt: "Tepatu 5", placement: "center", size: "large", caption: "Haumi – Te Pā Tū, 2022", type: "image" }
+    { id: 26, src: "images/tepatu5.png", alt: "Tepatu 5", placement: "center", size: "large", caption: "Haumi – Te Pā Tū, 2022 Photo: Damien Nikora", type: "image" }
 ];
 
 // Color palette for random hover effects
