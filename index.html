@@ -1,36 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-
-<!-- title -->
-<title> Max Quinn-Tapara </title>
-
-<!-- mobile -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
-
-<!-- favicon -->
-<link rel="shortcut icon" href="favicon_1.png"/>
-
-<!-- css -->
-<link rel="stylesheet" type=text/css href="main.css"/>
-<link rel="stylesheet" type="text/css" href="media_queries.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Quinn-Tapara - Photo Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
 </head>
-
 <body>
+    <!-- P5.js Canvas Container (background animation) -->
+    <div id="p5-container"></div>
 
-<div class="title" id="title">
-<h1>
-Max Quinn-Tapara<br>
-Graphic Design at Extended Whānau
-</h1>
-<br>
-<h2></h2>
-<h1> +64 22 0904590<br>
-<a href="mailto:maxquinntapara@gmail.com" target="_blank">maxquintapara@gmail.com</a>
-</h1>
-</div>
-</div>
+    <!-- Carousel View (default) -->
+    <div id="carousel" class="carousel">
+        <!-- Header -->
+        <div class="header">
+            <button id="homeBtn" class="nav-btn">Max Quinn-Tapara</button>
+            <div class="counter">
+                <span id="currentNum">01</span> / <span id="totalNum">24</span>
+            </div>
+            <button id="indexBtn" class="nav-btn">index</button>
+        </div>
+
+        <!-- Main media container -->
+        <div id="imageContainer" class="image-container">
+            <img id="mainImage" src="/placeholder.svg" alt="" class="main-image">
+            <video id="mainVideo" class="main-image hidden" controls muted autoplay loop></video>
+        </div>
+
+        <!-- Bottom caption -->
+        <div class="bottom-caption">
+            <span id="imageCaption">Extended Whānau Job title, Year, Photo: Damien Nikora</span>
+        </div>
+    </div>
+
+    <!-- About Overlay -->
+    <div id="aboutOverlay" class="about-overlay hidden">
+        <div class="about-content">
+            <div class="about-text">
+                <p>Ko Tokomaru tōku waka</p>
+                <p>Ko Pukeatua tōku maunga</p>
+                <p>Ko Te Awa Kairangi tōku awa</p>
+                <p>Ko Te Atiawa me Ngāti Maniapoto ōku iwi</p>
+                <p>Ko Max Quinn-Tapara ahau</p>
+                <br>
+                <p>No Te Awakairangi ahau</p>
+                <p>He Kaiwhakatauira Whakaniko e noho ana</p>
+                <p>ki <a href="#" class="about-link">Extended Whānau</a>.</p>
+                 <br>
+                <p>Max is a graphic designer working at the intersection of contemporary design and mātauranga Māori. After completing his undergraduate studies in 2020 at Toi Rauwhārangi, Massey University, Max has been based in Tāmaki Makaurau, working across a range of kaupapa to create work grounded in tikanga, story, identity, and the communities it serves.</p>
+            </div>
+            <div class="about-index">
+                <a href="#" class="about-link" id="aboutIndexLink">Index</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Index View -->
+    <div id="indexView" class="index-view hidden">
+        <!-- Header -->
+        <div class="header fixed">
+            <button id="homeBtn2" class="nav-btn">Max Quinn-Tapara</button>
+            <div class="counter">
+                <span id="currentNum2">01</span> / <span id="totalNum2">24</span>
+            </div>
+            <button id="closeBtn" class="nav-btn">close</button>
+        </div>
+
+        <!-- Image grid -->
+        <div class="grid-container">
+            <div id="imageGrid" class="image-grid"></div>
+        </div>
+    </div>
+
+    <script src="koru-animation.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
