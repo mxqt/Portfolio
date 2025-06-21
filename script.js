@@ -14,6 +14,7 @@ const images = [
     { id: 12, src: "images/rangatira4.jpeg", alt: "Rangatira 4", placement: "center", size: "large", caption: "Extended Whānau – Rangatira Zine, 2023", type: "image" },
     { id: 13, src: "images/tehau1.jpg", alt: "Tehau 1", placement: "center", size: "large", caption: "Extended Whānau - Te Hau Whakatonu, 2024", type: "image" },
     { id: 14, src: "images/tehau2.jpg", alt: "Tehau 2", placement: "fullscreen", size: "fullscreen-landscape", caption: "Extended Whānau - Te Hau Whakatonu, 2024", type: "image" },
+      { id: 15, src: "images/tematahi.jpg", alt: "Te Matahi 1", placement: "fullscreen", size: "fullscreen-landscape", caption: "Extended Whānau - Te Tōangaroa, 2024", type: "image" },
     { id: 16, src: "images/tepuna1.jpeg", alt: "Tepuna 1", placement: "fullscreen", size: "fullscreen-landscape", caption: "Extended Whānau - Te Puna, Tātaki, 2024.", type: "image" },
     { id: 17, src: "images/tepuna2.jpeg", alt: "Tepuna 2", placement: "fullscreen", size: "fullscreen-landscape", caption: "Extended Whānau - Te Puna, Tātaki", type: "image" },
     { id: 18, src: "images/wahine1.jpeg", alt: "Wahine 1", placement: "fullscreen", size: "fullscreen-landscape", caption: "Wahine Toa, 2023, Photo: Jeremy Hooper", type: "image" },
